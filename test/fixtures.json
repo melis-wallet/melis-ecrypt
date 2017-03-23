@@ -1,0 +1,35 @@
+{
+  "valid": [
+    {
+      "passphrase": "VerySecretPassPhrase",
+      "plainText": "993f87892a70f33df995610b6d587a4b2cb9ed9dab2e70c7194596cf3330398d",
+      "nonce": "66113399",
+      "output": "fb6447dde42647dd5770721223d6dbf63228df7a9738e36a316933e0785f36e3b4c5ef17488a0e7b",
+      "description": "simple test"
+    }
+  ],
+
+  "invalid": {
+    "decrypt": [
+      {
+        "passphrase": "VerySecretPassPhrase",
+        "plainText": "993f87892a70f33df995610b6d587a4b2cb9ed9dab2e70c7194596cf3330398d",
+        "nonce": "66113399",
+        "output": "fb6447dde42647dd5770721223d6dbf63228df7a9738e36a316933e0785f36e3b4c5ef17488a0e",
+        "description": "Invalid Ecrypt data length"
+      },
+      {
+        "passphrase": "VerySecretPassPhrase",
+        "plainText": "993f87892a70f33df995610b6d587a4b2cb9ed9dab2e70c7194596cf3330398d",
+        "nonce": "66113399",
+        "output": "fc6447dde42647dd5770721223d6dbf63228df7a9738e36a316933e0785f36e3b4c5ef17488a0e7b",
+        "description": "Invalid Ecrypt prefix"
+      }
+
+    ],
+    "encrypt": [],
+    "verify": []
+  }
+}
+
+
